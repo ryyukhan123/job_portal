@@ -27,14 +27,14 @@ jobs:
 
       # 4️⃣ Build & Push Backend
       - name: Build & Push Backend
-        working-directory: job-portal/backend
+        working-directory: backend
         run: |
           docker build -t ${{ secrets.DOCKER_USERNAME }}/backend:latest .
           docker push ${{ secrets.DOCKER_USERNAME }}/backend:latest
 
       # 5️⃣ Build & Push Frontend
       - name: Build & Push Frontend
-        working-directory: job-portal/frontend
+        working-directory: frontend
         run: |
           docker build -t ${{ secrets.DOCKER_USERNAME }}/frontend:latest .
           docker push ${{ secrets.DOCKER_USERNAME }}/frontend:latest
