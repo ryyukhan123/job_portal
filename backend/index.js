@@ -15,9 +15,12 @@ const app = express();
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+app.get("/", (req,res)=>{
+  res.send("Backend is running successfully");
+});
 app.use(cookieParser());
 const corsOptions = {
-    origin:'http://localhost:5173',
+    origin:"http://54.242.58.58",
     credentials:true
 }
 
