@@ -1,10 +1,3 @@
-- name: Debug repo structure
-  run: |
-    echo "Current path:"
-    pwd
-    echo "Files:"
-    ls -R
-
 name: CI/CD Pipeline
 
 on:
