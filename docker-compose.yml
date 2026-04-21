@@ -2,7 +2,7 @@ version: "3"
 
 services:
   backend:
-    image: ryyankhan/backe:latest
+    image: ryyankhan/bb:latest
     container_name: jobportal_backend
     ports:
       - "8000:8000"
@@ -11,7 +11,7 @@ services:
     restart: always
 
   frontend:
-    image: ryyankhan/fronte:latest
+    image: ryyankhan/ff:latest
     container_name: jobportal_frontend
     ports:
       - "80:80"
