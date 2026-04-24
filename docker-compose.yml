@@ -11,7 +11,7 @@ services:
     restart: always
 
   frontend:
-    image: ryyankhan/jobback:latest
+    image: nginx
     container_name: jobportal_frontend
     ports:
       - "80:80"
