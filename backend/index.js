@@ -20,7 +20,7 @@ app.get("/", (req,res)=>{
 });
 app.use(cookieParser());
 const corsOptions = {
-    origin:"http://52.90.100.215",
+    origin:"http://32.193.99.168",
     credentials:true
 }
 
